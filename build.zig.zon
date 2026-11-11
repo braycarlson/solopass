@@ -1,0 +1,24 @@
+.{
+    .name = .solopass,
+    .version = "0.1.0",
+    .minimum_zig_version = "0.17.1",
+    .fingerprint = 0xb163519335f91937,
+    .paths = .{
+        "assets",
+        "build.zig",
+        "build.zig.zon",
+        "contrib",
+        "LICENSE",
+        "src",
+    },
+    .dependencies = .{
+        .dvui = .{
+            .url = "https://github.com/david-vanderson/dvui/archive/275c248f6a2a80f92723ac93242310e16201a49b.tar.gz",
+            .hash = "dvui-0.6.0-dev-AQFJmWZLBAG6E9WSTCqdouXXCC8gF91z6oiLmZvh3e-5",
+        },
+        .umbra = .{
+            .url = "https://github.com/braycarlson/umbra/archive/face93097fb83a1683fa6e47f6ea4aed2df43c6e.tar.gz",
+            .hash = "umbra-0.1.0-2OhxpmYgCAD0QBjfcL8wJ72Q4kSLIm8GTWpjoKNbSmkW",
+        },
+    },
+}

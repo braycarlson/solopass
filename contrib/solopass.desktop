@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Solopass
+Comment=Twingate in the system tray
+Exec=solopass
+Icon=solopass
+Terminal=false
+StartupWMClass=solopass
