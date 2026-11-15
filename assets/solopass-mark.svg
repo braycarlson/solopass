@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="8 8 240 240" role="img" aria-label="solopass">
+    <title>solopass</title>
+    <defs>
+        <linearGradient id="solopass-disc" gradientUnits="userSpaceOnUse" x1="8" y1="8" x2="248" y2="248">
+            <stop offset="0" stop-color="#7940E7"/>
+            <stop offset="1" stop-color="#0564E3"/>
+        </linearGradient>
+    </defs>
+    <circle cx="128" cy="128" r="120" fill="url(#solopass-disc)"/>
+    <path fill="#FFFFFF" d="M62 191L62 115A66 66 0 0 1 194 115L194 191A12 12 0 0 1 170 191L170 115A42 42 0 0 0 137.6 74.11L137.6 191A9.6 9.6 0 0 1 118.4 191L118.4 74.11A42 42 0 0 0 86 115L86 191A12 12 0 0 1 62 191Z"/>
+</svg>

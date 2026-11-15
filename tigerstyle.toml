@@ -1,0 +1,2 @@
+extend_select = ["TS019", "TS022", "TS026", "TS027", "TS033", "TS043", "TS046", "TS053", "TS055"]
+parameter_exempt_types = ["Glyph", "Layout", "Paint", "Raster", "Wordmark"]

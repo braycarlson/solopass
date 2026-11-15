@@ -1,0 +1,17 @@
+polkit.addRule(function (action, subject) {
+    var switching = /^\/usr\/bin\/twingate -d account switch [A-Za-z0-9@._:+-]+$/;
+
+    if (action.id !== "org.freedesktop.policykit.exec") return polkit.Result.NOT_HANDLED;
+    if (!subject.local) return polkit.Result.NOT_HANDLED;
+    if (!subject.active) return polkit.Result.NOT_HANDLED;
+
+    var administrator = subject.isInGroup("sudo") || subject.isInGroup("wheel");
+    if (!administrator) return polkit.Result.NOT_HANDLED;
+
+    var line = action.lookup("command_line");
+    if (line === "/usr/bin/twingate -d connect") return polkit.Result.YES;
+    if (line === "/usr/bin/twingate -d service-stop") return polkit.Result.YES;
+    if (switching.test(line)) return polkit.Result.YES;
+
+    return polkit.Result.NOT_HANDLED;
+});

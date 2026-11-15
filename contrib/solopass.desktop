@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Solopass
+Comment=Twingate in the system tray
+Keywords=twingate;vpn;
+Exec=solopass
+Icon=solopass
+Terminal=false
+StartupWMClass=solopass
